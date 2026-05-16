@@ -411,7 +411,7 @@
       <div class="stat-label">Members Served</div>
     </div>
     <div class="stat-card fade-in">
-      <div class="stat-value" id="statCmds">32</div>
+      <div class="stat-value" id="statCmds">31</div>
       <div class="stat-label">Commands</div>
     </div>
     <div class="stat-card fade-in">
@@ -476,7 +476,7 @@
 <section id="commands">
   <div class="section-header fade-in">
     <span class="section-label">// slash commands</span>
-    <h2>32 commands, zero fluff</h2>
+    <h2>31 commands, zero fluff</h2>
     <p>Every command does one thing and does it well.</p>
   </div>
   <div class="filter-tabs">
@@ -489,42 +489,42 @@
   </div>
   <div class="commands-list">
     <!-- Admin -->
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/setup</span><span class="cmd-desc">Configure welcome, logs, member role, staff roles, and core channels</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/automod</span><span class="cmd-desc">View and toggle automod rules (bad words, anti-spam, link filter, etc.)</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/wordfilter</span><span class="cmd-desc">Manage the banned word list and soft-warning word list</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/selfroles</span><span class="cmd-desc">Create and publish an interactive self-role button panel</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/jtc</span><span class="cmd-desc">Configure the Join-to-Create lobby and temporary voice channel settings</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/ticket setup</span><span class="cmd-desc">Set the support channel and publish the open-ticket button</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/xp setlevel</span><span class="cmd-desc">Manually set a member's XP level</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/xp resetall</span><span class="cmd-desc">Wipe XP data for all members in the server</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/reminders</span><span class="cmd-desc">Schedule recurring timed messages to any channel</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/apply</span><span class="cmd-desc">Manage the application system and open positions</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/automod</span><span class="cmd-desc">Configure the advanced automod system — toggle rules and thresholds</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/automod-hide</span><span class="cmd-desc">Make a user completely invisible to automod, bypassing all rules</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/automod_user</span><span class="cmd-desc">Silently delete all messages from a specific user without warnings</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/logs</span><span class="cmd-desc">Configure log channels for messages, moderation, and member events</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/starboard</span><span class="cmd-desc">Manage the starboard — set channel, emoji, and star threshold</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/suggestion</span><span class="cmd-desc">Manage the suggestions system — set channel and approve/deny suggestions</span><span class="cmd-badge badge-admin">Admin</span></div>
     <!-- Moderation -->
-    <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/warn</span><span class="cmd-desc">Issue a warning to a member; auto-escalates at 3, 5, and 7 warnings</span><span class="cmd-badge badge-mod">Mod</span></div>
+    <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/warn</span><span class="cmd-desc">Warn a member; auto-escalates at 3 warnings (timeout), 5 (kick), 7 (ban)</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/warnings</span><span class="cmd-desc">View the full warning history for a member</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/clearwarnings</span><span class="cmd-desc">Remove all warnings from a member's record</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/mute</span><span class="cmd-desc">Timeout a member for a specified duration</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/unmute</span><span class="cmd-desc">Remove an active timeout from a member</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/kick</span><span class="cmd-desc">Kick a member from the server with an optional reason</span><span class="cmd-badge badge-mod">Mod</span></div>
-    <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/ban</span><span class="cmd-desc">Permanently ban a member and optionally delete their messages</span><span class="cmd-badge badge-mod">Mod</span></div>
-    <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/unban</span><span class="cmd-desc">Lift a ban from a previously banned user by ID</span><span class="cmd-badge badge-mod">Mod</span></div>
+    <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/ban</span><span class="cmd-desc">Permanently ban a member and optionally purge their messages</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/purge</span><span class="cmd-desc">Bulk-delete up to 100 messages from the current channel</span><span class="cmd-badge badge-mod">Mod</span></div>
-    <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/ticket close</span><span class="cmd-desc">Close and archive a support ticket thread</span><span class="cmd-badge badge-mod">Mod</span></div>
     <!-- Leveling -->
-    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/rank</span><span class="cmd-desc">Display your XP, level, and rank card with progress bar</span><span class="cmd-badge badge-leveling">Leveling</span></div>
-    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/leaderboard</span><span class="cmd-desc">View the top 10 most active members by XP</span><span class="cmd-badge badge-leveling">Leveling</span></div>
-    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/xp give</span><span class="cmd-desc">Grant XP to a member manually</span><span class="cmd-badge badge-leveling">Leveling</span></div>
-    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/xp remove</span><span class="cmd-desc">Deduct XP from a member manually</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/rank</span><span class="cmd-desc">View your XP, level, and rank card with progress bar</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/leaderboard</span><span class="cmd-desc">View the server XP leaderboard</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/addxp</span><span class="cmd-desc">Add XP to a member manually (admin)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/removexp</span><span class="cmd-desc">Remove XP from a member manually (admin)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/setxp</span><span class="cmd-desc">Set a member's XP to an exact value (admin)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/resetxp</span><span class="cmd-desc">Reset a member's XP to zero (admin)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/xp_hard_reset</span><span class="cmd-desc">Wipe ALL XP and levels for every member in the server (owner only)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/levelroles</span><span class="cmd-desc">Configure roles automatically awarded when members reach a level</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/levelupchannel</span><span class="cmd-desc">Set the channel where level-up announcements are posted</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/xpmultiplier</span><span class="cmd-desc">Set the server-wide XP multiplier (admin)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
+    <div class="cmd-row fade-in" data-cat="leveling"><span class="cmd-name">/xpblacklist</span><span class="cmd-desc">Manage channels where XP is not earned (admin)</span><span class="cmd-badge badge-leveling">Leveling</span></div>
     <!-- Utility -->
-    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/userinfo</span><span class="cmd-desc">Show detailed information about a member — join date, roles, warnings</span><span class="cmd-badge badge-utility">Utility</span></div>
-    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/serverinfo</span><span class="cmd-desc">Display server stats — member count, boosts, channels, creation date</span><span class="cmd-badge badge-utility">Utility</span></div>
-    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/ping</span><span class="cmd-desc">Check the bot's WebSocket ping and API latency</span><span class="cmd-badge badge-utility">Utility</span></div>
-    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/help</span><span class="cmd-desc">List all available commands with descriptions</span><span class="cmd-badge badge-utility">Utility</span></div>
-    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/announce</span><span class="cmd-desc">Send a formatted embed announcement to any channel</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/ping</span><span class="cmd-desc">Check bot WebSocket ping and API latency</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/remind</span><span class="cmd-desc">Set personal reminders delivered by the bot</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/suggest</span><span class="cmd-desc">Submit a suggestion to the server's suggestion channel</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/tag</span><span class="cmd-desc">Create, retrieve, and manage reusable text tags</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/trigger</span><span class="cmd-desc">Manage auto-response triggers that fire on keyword matches</span><span class="cmd-badge badge-utility">Utility</span></div>
     <!-- Community -->
-    <div class="cmd-row fade-in" data-cat="community"><span class="cmd-name">/audiofinder</span><span class="cmd-desc">Identify a song from a video or audio file using Shazam recognition</span><span class="cmd-badge badge-community">Community</span></div>
-    <div class="cmd-row fade-in" data-cat="community"><span class="cmd-name">/showcase</span><span class="cmd-desc">Submit an edit to the weekly showcase thread</span><span class="cmd-badge badge-community">Community</span></div>
-    <div class="cmd-row fade-in" data-cat="community"><span class="cmd-name">/poll</span><span class="cmd-desc">Create a quick yes/no or multi-option community poll</span><span class="cmd-badge badge-community">Community</span></div>
-    <div class="cmd-row fade-in" data-cat="community"><span class="cmd-name">/suggest</span><span class="cmd-desc">Submit a suggestion to the server's suggestion channel</span><span class="cmd-badge badge-community">Community</span></div>
+    <div class="cmd-row fade-in" data-cat="community"><span class="cmd-name">/edit_link</span><span class="cmd-desc">Submit a TikTok edit for the community to rate with star ratings</span><span class="cmd-badge badge-community">Community</span></div>
   </div>
 </section>
 
