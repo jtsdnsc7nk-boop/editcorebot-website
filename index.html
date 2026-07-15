@@ -391,7 +391,7 @@
       The Discord bot<br>
       built for <span class="glitch" data-text="edit servers">edit servers</span>
     </h1>
-    <p>Moderation, leveling, audio recognition, tickets, join-to-create voice channels — everything your editing community needs in one bot.</p>
+    <p>Moderation, raid security, leveling, audio recognition, AE resources, tickets, and join-to-create voice — everything your editing community needs in one bot.</p>
     <div class="hero-btns">
       <a href="https://discord.com/oauth2/authorize?client_id=1502643503656865862&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-primary" target="_blank" rel="noopener">Add to Server</a>
       <a href="#commands" class="btn btn-ghost">Browse Commands</a>
@@ -411,7 +411,7 @@
       <div class="stat-label">Members Served</div>
     </div>
     <div class="stat-card fade-in">
-      <div class="stat-value" id="statCmds">36</div>
+      <div class="stat-value" id="statCmds">41</div>
       <div class="stat-label">Commands</div>
     </div>
     <div class="stat-card fade-in">
@@ -452,7 +452,7 @@
     <div class="feature-card fade-in">
       <div class="feature-icon">🔊</div>
       <h3>Join-to-Create Voice</h3>
-      <p>Users join a lobby channel and get their own private voice channel, auto-cleaned when empty.</p>
+      <p>Users join a lobby channel and get their own private voice channel with built-in controls — lock, limit, rename — auto-cleaned when empty.</p>
     </div>
     <div class="feature-card fade-in">
       <div class="feature-icon">🏆</div>
@@ -469,6 +469,21 @@
       <h3>Live Status API</h3>
       <p>Built-in HTTP endpoint returns real-time bot stats — ping, guild count, member count — for external dashboards.</p>
     </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🚨</div>
+      <h3>Raid & Security</h3>
+      <p>Automated raid detection, spam filtering, content scanning, quarantine, lockdown, and incident logging — with full staff controls via /security.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🎬</div>
+      <h3>AE Resource Hub</h3>
+      <p>Curated After Effects plugins, scripts, extensions, and install tutorials for Windows and Mac — posted on demand with /aeplugins, /aescripts, /aeextensions, and /tutorials.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🔈</div>
+      <h3>Terminal TTS</h3>
+      <p>Operators can speak text into any voice channel from the bot terminal using Edge TTS — join, synthesize, play, and disconnect automatically.</p>
+    </div>
   </div>
 </section>
 
@@ -476,7 +491,7 @@
 <section id="commands">
   <div class="section-header fade-in">
     <span class="section-label">// slash commands</span>
-    <h2>36 commands, zero fluff</h2>
+    <h2>41 commands, zero fluff</h2>
     <p>Every command does one thing and does it well.</p>
   </div>
   <div class="filter-tabs">
@@ -499,7 +514,8 @@
     <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/setup-welcome</span><span class="cmd-desc">Configure the welcome channel and banner for new members</span><span class="cmd-badge badge-admin">Admin</span></div>
     <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/setup-selfroles</span><span class="cmd-desc">Create and publish an interactive self-role button panel</span><span class="cmd-badge badge-admin">Admin</span></div>
     <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/setup-tickets</span><span class="cmd-desc">Set the support channel and publish the open-ticket embed</span><span class="cmd-badge badge-admin">Admin</span></div>
-    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/join-create</span><span class="cmd-desc">Configure the Join-to-Create lobby for temporary voice channels</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/join-create</span><span class="cmd-desc">Create the Join-to-Create lobby channel for temporary voice channels</span><span class="cmd-badge badge-admin">Admin</span></div>
+    <div class="cmd-row fade-in" data-cat="admin"><span class="cmd-name">/security</span><span class="cmd-desc">Raid response, quarantine, lockdown, incident logs, and security configuration</span><span class="cmd-badge badge-admin">Admin</span></div>
     <!-- Moderation -->
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/warn</span><span class="cmd-desc">Warn a member; auto-escalates at 3 warnings (timeout), 5 (kick), 7 (ban)</span><span class="cmd-badge badge-mod">Mod</span></div>
     <div class="cmd-row fade-in" data-cat="mod"><span class="cmd-name">/warnings</span><span class="cmd-desc">View the full warning history for a member</span><span class="cmd-badge badge-mod">Mod</span></div>
@@ -527,6 +543,10 @@
     <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/suggest</span><span class="cmd-desc">Submit a suggestion to the server's suggestion channel</span><span class="cmd-badge badge-utility">Utility</span></div>
     <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/tag</span><span class="cmd-desc">Create, retrieve, and manage reusable text tags</span><span class="cmd-badge badge-utility">Utility</span></div>
     <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/trigger</span><span class="cmd-desc">Manage auto-response triggers that fire on keyword matches</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/tutorials</span><span class="cmd-desc">Post installation tutorial videos for Windows and Mac editing software</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/aeplugins</span><span class="cmd-desc">Post free After Effects plugin download links for Windows and Mac</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/aeextensions</span><span class="cmd-desc">Post free After Effects extension download links</span><span class="cmd-badge badge-utility">Utility</span></div>
+    <div class="cmd-row fade-in" data-cat="utility"><span class="cmd-name">/aescripts</span><span class="cmd-desc">Post free After Effects script download links</span><span class="cmd-badge badge-utility">Utility</span></div>
     <!-- Community -->
     <div class="cmd-row fade-in" data-cat="community"><span class="cmd-name">/edit_link</span><span class="cmd-desc">Submit a TikTok edit for the community to rate with star ratings</span><span class="cmd-badge badge-community">Community</span></div>
   </div>
@@ -546,7 +566,10 @@
     <div class="pill fade-in"><span class="pill-dot green"></span>yt-dlp</div>
     <div class="pill fade-in"><span class="pill-dot violet"></span>Canvas (rank cards)</div>
     <div class="pill fade-in"><span class="pill-dot violet"></span>pm2 (process manager)</div>
+    <div class="pill fade-in"><span class="pill-dot green"></span>Edge TTS (voice synthesis)</div>
+    <div class="pill fade-in"><span class="pill-dot violet"></span>@discordjs/voice</div>
     <div class="pill fade-in"><span class="pill-dot"></span>Flat-file JSON storage</div>
+    <div class="pill fade-in"><span class="pill-dot"></span>SQLite (security data)</div>
     <div class="pill fade-in"><span class="pill-dot"></span>Built-in HTTP (no Express)</div>
   </div>
 </section>
@@ -556,7 +579,7 @@
   <div class="footer-grid">
     <div>
       <a href="#" class="logo" style="font-size:1rem;">EditCore<span>Bot</span><span class="cursor"></span></a>
-      <p class="footer-desc">A Discord bot built for video editing communities — moderation, leveling, audio recognition, and more.</p>
+      <p class="footer-desc">A Discord bot built for video editing communities — moderation, raid security, leveling, audio recognition, AE resources, and more.</p>
     </div>
     <div>
       <h4>Links</h4>
